@@ -1,0 +1,35 @@
+import styles from "./index.module.css";
+import sponsors from "@site/src/data/sponsors";
+
+# Pinata's Challenge: File-Based Identity Solutions
+
+<div className={styles.sponsorsGrid}>
+  {sponsors
+    .filter((s) => s.key == "pinata")
+    .map((sponsor) => (
+      <img src={sponsor.logo} />
+    ))}
+</div>
+
+### Challenges
+
+- **Verifiable File Storage**. Associate files to users via verifiable credentials. Both files and verifiable credential metadata can be stored publicly or privately using Pinata’s immutable Files API. In this challenge, you will demonstrate your creativity in using immutability and verifiable content hashes to solve a real-world problem.
+- **Proof of Personhood Credentials**. In this open-to-interpretation challenge, we want to see creative solutions to personhood credentials that leverage immutable file storage. Participants can use private file storage through Pinata’s Files API or public file storage through Pinata’s IPFS pinning service.
+- **Identity-Based Access Controls For Private Files. **Access controls are one of software’s ongoing challenges. In this challenge, participants should build an identity-based access control system for retrieving files stored privately on Pinata’s Files API. Note, this challenge should not use IPFS as IPFS is a public network. This should make use of private file storage through the Files API.
+
+### Prizes
+
+- Grand prize - $5000
+- Prize per challenge - $1500 (1 for each of the 3 challenges)
+- Honorable mentions: $100x5
+
+### Submission requirements
+
+- **Must use Pinata to store and serve files**: Each submission must use Pinata for file storage and retrieval. Depending on the challenge, participants may be able to use IPFS and private files or just private files..
+- **Must focus on solving real-world problems**: Submissions should focus on practical use cases and leverage creative solutions that include Pinata’s file APIs.
+
+### Tooling and resources
+
+- Docs: [https://docs.pinata.cloud](https://docs.pinata.cloud/)
+- Website: [https://pinata.cloud](https://pinata.cloud/)
+- App/Signup: [https://app.pinata.cloud](https://app.pinata.cloud/)

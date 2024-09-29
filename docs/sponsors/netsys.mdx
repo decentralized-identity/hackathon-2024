@@ -1,0 +1,51 @@
+import styles from "./index.module.css";
+import sponsors from "@site/src/data/sponsors";
+
+# NetSys Challenge: Hospitality and Travel
+
+<div className={styles.sponsorsGrid}>
+  {sponsors
+    .filter((s) => s.key == "netsys")
+    .map((sponsor) => (
+      <img src={sponsor.logo} />
+    ))}
+</div>
+_Sponsor: [NetSys](http://netsystechnology.com/) | DIF H&T SIG_
+
+### Overview
+
+Explore how Decentralised Identity technology combined with traditional travel tech can help make travel more enjoyable and rewarding for everyone.
+
+### Challenge
+
+Friction-free travel using traveler personal data and preferences.
+
+Using the power of Decentralized Identity technology, demonstrate one or more steps in a future, frictionless and connected travel journey (looking->booking->arriving->enjoying->departing-reminiscing->returning). Teams should demonstrate the reusability and portability of traveler information along the travel journey and the benefits accruing to the traveler, travel providers (Transport. Accommodation, tourism etc.) or destination (the location in which the travel takes place).
+
+### Prizes
+
+Coming soon
+
+### Submission requirements
+
+- 3-minute video describing what the app does and URL to public code repository
+- Include a text description that should explain the features and functionality of your project
+- Provide a text description of how the DIDs, VCs, and other requirements were used
+- A profile is to be used to specify traveler personal data and preferences which may be self-attested by the traveler.
+- Teams can use a traveler profile of their own design or may use preferences and
+- DIDComm services provided by Autoura.me. Details follow:
+
+**Autoura provides three DID enabled services:**
+
+1. Consumer hospitality & travel preferences (food, drinks, accessibility, transport, general travel requirements)
+2. Traveler current location
+3. Two-way DIDComm messaging
+
+Use these preferences to personalise your perfect frictionless connected trip! These services should work when called from all publicly resolvable DIDs. Example code using the TBD platform is available via GitHub to help you get up and running quickly.
+
+### Tooling and resources
+
+Autoura’s Alex Bainbridge will be available via DIF discord or email Autoura DevHelp at (devhelp@autoura.com) to help answer your questions.
+
+- Autoura Developer documentation [https://www.autoura.com/docs/api/profiles](https://www.autoura.com/docs/api/profiles)
+- TBD Example code [https://github.com/Autoura/TBDdemo](https://github.com/Autoura/TBDdemo)

@@ -1,0 +1,38 @@
+import styles from "./index.module.css";
+import sponsors from "@site/src/data/sponsors";
+
+# Extrimian Challenge: Secure Hotel Check-in System
+
+<div className={styles.sponsorsGrid}>
+  {sponsors
+    .filter((s) => s.key == "extrimian")
+    .map((sponsor) => (
+      <img src={sponsor.logo} />
+    ))}
+</div>
+
+Secure Hotel Check-in System Using Verifiable Credentials (VC)
+
+### Overview
+
+Hotels handle sensitive guest information during the check-in process, making security a top priority. Your challenge is to design a secure check-in system for hotels that leverages **Verifiable Credentials (VC)** issued by the government. The government of the guest's country will issue a **VC Passport** for travelers, and when they check into a hotel, the hotel will verify their credential and check its status from a list (valid, invalid, or under review). This ensures a seamless, secure, and privacy-focused check-in process.
+
+### Prizes
+
+Coming soon
+
+### Submission requirements
+
+- Use **ID Connect by Extrimian** to create both the credential issuer (government) and verifier (hotel).
+- The system must include the following components:
+  - **Credential Issuer**: The government entity issues the VC Passport to the traveler.
+  - **Credential Verifier**: The hotel validates the VC when a guest checks in, ensuring it is genuine and up-to-date.
+  - **Status Check**: The system should check the credential’s status from a status list
+  - Upon successful verification, the guest is cleared to check in.
+
+### Tooling and resources
+
+- **How to use ID Connect**:[ YouTube Playlist](https://youtube.com/playlist?list=PL8tv4_kgykip5IbaHoEQrHdSnzGfr-mfa) (Check meetings 3 - Issuer and 4 - Verifier for key functionalities)
+- **ID Connect Demo**:[ Extrimian Demo](https://extrimian.io/courses/learn-how-to-use-idconnect/)
+- **Documentation**:[ Extrimian SSI Service API Documentation](https://docs.extrimian.com/en/docs/ApiExtrimian/extrimian-ssi-service-api)
+- **Extrimian Academy**:[ https://extrimian.io/academy/](https://extrimian.io/academy/)

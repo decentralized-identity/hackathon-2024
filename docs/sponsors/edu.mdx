@@ -1,0 +1,65 @@
+import styles from "./index.module.css";
+import sponsors from "@site/src/data/sponsors";
+
+# Future of Education & Workforce
+
+<div className={styles.sponsorsGrid}>
+  {sponsors
+    .filter((s) => s.key == "edu")
+    .map((sponsor) => (
+      <img src={sponsor.logo} />
+    ))}
+</div>
+
+_Sponsor: [Job for the Future Foundation](https://www.jff.org/) and [Digital Credentials Consortium](https://digitalcredentials.mit.edu/)_
+
+### Challenges
+
+This challenge set is part of the Education Track, and invites you to explore a future where access to education is available to any learner and where education opens the door to economic advancement. Challenges include:
+
+- **[C 1] Verifiable Learner/Worker IDs and Records Challenge**
+  - In this challenge, we provide examples of Verifiable Credentials representing Student IDs, Employee IDs, and Employment History. The reward will go to the most compelling demonstration of transformation possible when people can control their own data, including learning and experiences. Example ideas include: using proof of employment history to apply to a new job, access to platforms, demonstration of essential skills, and applications of selective disclosure.
+- **[C 2] Powerful New VC Tools**
+  - [C 2a] Multiple language support: promote mobility by allowing education credentials to be meaningfully used to access cross-border opportunities. This challenge must make use of the renderMethod attribute and enable VCs to provide multiple language support. Build a tool that lets people construct VCs in any language, especially those using non-Latin script.
+  - [C 2b] Browser Integration: improve convenience and usability for displaying and verifying VCs by building a browser plugin. This challenge must make use of the VC renderMethod attribute.
+- **[C 3] Feature Enhancement**
+  - [C 3a] Add support for the [Learner Credential Wallet](https://github.com/digitalcredentials/learner-credential-wallet) to use the VC renderMethod attribute to support rich displays of credentials in the application.
+  - [C 3b] Allow [VerifierPlus](https://github.com/digitalcredentials/web-verifier-plus) to use the renderMethod attribute to support rich displays, including PDF
+- **[Bonus Design Challenge] Establishing Credibility in Digital Credentials: **
+  - Context: Verifying a digital credential like Verifiable Credentials involves a series of checks performed by software libraries. Some of these are common across all Verifiable Credentials, such as checking that the credential hasn’t been tampered with, hasn’t been revoked, etc. Other checks are specific to the use case, such as checking if the issuer is an authorized issuer of the credential type.
+  - Challenge: The question is this – in a world where verifiers, or consumers of VCs, may be consuming a broad array of credentials, often with a human in the loop, how does the human know that the verification check is valid? What is the equivalent of the “browser padlock” for Verifiable Credentials? This challenge invites you to explore how organizations can integrate use of VCs into their processes in ways that humans can have confidence in the results.
+  - This challenge can be stacked on top of one of the above challenges, but not standalone.
+
+### Prizes
+
+Coming soon
+
+### Submission requirements
+
+Your demonstration must be open source, using the MIT license.
+
+It must meet technical interoperability standards used by JFF Plugfest. That includes:
+
+- Credential Format: [Open Badges 3.0](https://imsglobal.github.io/openbadges-specification/ob_v3p0.html)
+  - This uses the Verifiable Credential format
+- If your project issues credentials (use one of):
+  - [VC API](https://w3c-ccg.github.io/vc-api/), with [CHAPI - Credential Handler API](https://chapi.io/) if needed, or
+  - [OpenID for Verifiable Credential Issuance](https://openid.net/specs/openid-4-verifiable-credential-issuance-1_0.html)
+- If your project exchange (“presents”) credentials (use one of):
+  - [CHAPI - Credential Handler API](https://chapi.io/) + [Verifiable Presentation Request](https://w3c-ccg.github.io/vp-request-spec/), or
+  - [OpenID for Verifiable Presentations](https://openid.net/specs/openid-4-verifiable-presentations-1_0.html), or
+  - [WACI-DIDComm Interop Profile](https://identity.foundation/waci-didcomm/)
+- You may reuse and build on top of the tools provided by the Plugfest, including:
+  - [VC Playground](https://vcplayground.org/)
+  - [CHAPI - Credential Handler API](https://chapi.io/)
+  - [Digital Credentials Consortium Wallet](https://github.com/digitalcredentials/learner-credential-wallet)
+
+Additional resources are available here at the [JFF Plugfest 3 site](https://w3c-ccg.github.io/vc-ed/plugfest-3-2023/)
+
+### Submission requirements
+
+In addition to W3C-compliant verifiable credentials you submission must include.
+
+- 3-minute video describing what the app does and provide a URL to a public code repository.
+- Text description of the project’s features and functionality.
+- Explanation of how DIDs, VCs, and other requirements were used.

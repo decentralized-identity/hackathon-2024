@@ -1,0 +1,53 @@
+import styles from "./index.module.css";
+import sponsors from "@site/src/data/sponsors";
+
+# TBD's Challenge: Known Customer Credentials
+
+<div className={styles.sponsorsGrid}>
+  {sponsors
+    .filter((s) => s.key == "tbd")
+    .map((sponsor) => (
+      <img src={sponsor.logo} />
+    ))}
+</div>
+
+### Overview
+
+[tbDEX](https://developer.tbd.website/docs/tbdex/) is an open messaging protocol that enables liquidity seekers to connect with liquidity providers. This means that as a liquidity provider, your business can be the backend supplier in several payment applications.
+
+Performing KYC on repeat customers every time they attempt to transact with you from a different payment app would be a pain. To avoid this, you will use the[ Web5 SDK](https://developer.tbd.website/docs/web5/) to issue a[ Known Customer Credential](https://github.com/TBD54566975/known-customer-credential) (KCC) to a customer, Alice, who you have already completed KYC on. You will store the JWT representing the KCC in Alice’s [Decentralized Web Node](https://developer.tbd.website/docs/web5/decentralized-web-nodes/what-are-dwns) so that she can present it to your business from any payment app.
+
+### Challenge
+
+1. Create a Decentralized Identifier (DID) and DWN to use as the Issuer.
+   1. Bonus: Use the DIF community DWN instance hosted by Google Cloud.
+2. Issue Alice a KCC that includes `evidence`. Note that for this challenge, you do not need to implement an actual identity verification flow.
+3. Install the [VC Protocol](https://vc-to-dwn.tbddev.org/vc-protocol) onto your DWN so that you can communicate with Alice’s DWN.
+4. Obtain permission to write to Alice’s DWN by sending a GET request to https://vc-to-dwn.tbddev.org/authorize?issuerDid=${issuerDidUri}
+5. Store the VC JWT of the KCC as a private record in Alice’s DWN.
+
+### Submit
+
+DWN Record ID of the KCC
+
+### Prizes
+
+Coming soon
+
+### Tooling and resources
+
+1. Alice’s DID: <code>did:dht:rr1w5z9hdjtt76e6zmqmyyxc5cfnwjype6prz45m6z1qsbm8yjao</code>
+2. [web5/credentials SDK](https://www.npmjs.com/package/@web5/credentials)
+3. [web5/api SDK](https://www.npmjs.com/package/@web5/api)
+4. [How to create a DID and DWN with Web5.connect()](https://developer.tbd.website/docs/web5/decentralized-web-nodes/web5-connect)
+5. [Obtain Bearer DID](https://developer.tbd.website/docs/web5/quickstart#2-access-bearer-did) - required to sign KCC
+6. [Known Customer Credential Schema](https://vc.schemas.host/kcc.schema.json)
+7. [How to issue a VC with Web5](https://developer.tbd.website/docs/web5/verifiable-credentials/vc-issuance)
+8. [Example of issuing a KCC with Web5](https://github.com/TBD54566975/tbd-examples/tree/main/javascript/kcc-issuance-snippet#readme)
+9. [Example of issued KCC](https://github.com/TBD54566975/tbd-examples/tree/main/javascript/kcc-issuance-snippet#output-vc-json)
+10. [How to install a DWN Protocol](https://developer.tbd.website/docs/web5/decentralized-web-nodes/protocols#installing-a-protocol)
+11. [How to store a VC in a DWN](https://developer.tbd.website/docs/web5/verifiable-credentials/vcs-in-dwn)
+
+### Contact Us
+
+If you have any questions or need any help, please reach out to us in our[ #kcc-hackathon](https://discord.com/channels/937858703112155166/1272378659730100245) channel on Discord

@@ -1,0 +1,55 @@
+import styles from "./index.module.css";
+import sponsors from "@site/src/data/sponsors";
+
+# Anonyome Labs Challenge: Personhood Credentials
+
+<div className={styles.sponsorsGrid}>
+  {sponsors
+    .filter((s) => s.key == "anonyome")
+    .map((sponsor) => (
+      <img src={sponsor.logo} />
+    ))}
+</div>
+
+### Overview
+
+This challenge encourages participants to create innovative solutions using **Personhood Credentials (PHCs)** based on the **W3C Verifiable Credentials** standard. The focus of this challenge is to build solutions that demonstrate privacy, security, and usability of PHCs in decentralized identity ecosystems.
+
+**Background Reading:** _“Personhood credentials: Artificial intelligence and the value of privacy-preserving tools to distinguish who is real online”_ [https://arxiv.org/pdf/2408.07892](https://arxiv.org/pdf/2408.07892)
+
+### Challenge
+
+Design and implement a privacy-preserving approach to PHCs. Submissions should demonstrate the following PHC capabilities:
+
+1. **Credential Issuance:** demonstrate PHC issuance using the following guarantees
+   1. **Credential Limits**: One PHC is issued per person (e.g., ensure not duplicates are created for a single individual)
+   2. **(Optional) Unlinkable Pseudonymity (privacy)**: enable a user to interact with services anonymously through a service-specific pseudonym
+2. **Credential Verification**: **[Zero Knowledge Proofs](https://www.w3.org/TR/vc-data-model-2.0/#zero-knowledge-proofs)**: demonstrate a holder proving possession of a PHC containing one or more elements contained in the credential schema without disclosing the element itself. Capabilities may also include selective disclosure, unlinkable disclosure, or non-correlatable identification of holder or subject.
+3. **PHC Usage**: demonstrate PHC usage by using at least one of the DIF foundational standards (e.g., [DIDComm](https://didcomm.org/))
+4. **(Optional) Aries Cloud Agent – Python integration**: demonstrate integrating PHC functionality within [ACA-Py](https://aca-py.org/main/)
+5. **(Optional) AnonCreds Implementation**: demonstrate PHC implementation using the [AnonCreds Specification](https://hyperledger.github.io/anoncreds-spec/).
+
+### Prizes
+
+- 1st place - $1500
+- 2nd place - $700
+- 3rd place - $300
+- Honorable mentions: $100 x 2
+
+### Submission requirements
+
+- Must use W3C-compliant verifiable credentials (conforming to the W3C [Verifiable Credentials Data Model ver 2.0](https://www.w3.org/TR/vc-data-model-2.0/) is preferred, although [ver 1.1](https://www.w3.org/TR/vc-data-model/) is acceptable)
+- 3-minute video describing what the app does
+- URL to public code repository with source code licensed using the [Apache License, ver 2.0](https://www.apache.org/licenses/LICENSE-2.0). One intent of this challenge is to contribute the created source code to the identity community.
+- Include a text description that should explain the features and functionality of your Project.
+- Provide a text description of how the VCs and other requirements were used
+- Code submissions should use either: Rust, Python, and/or TypeScript
+
+### Submission recommendations
+
+- Participants are encouraged to explore the integration of foundational standards such as Decentralized Identifiers (DIDs) and DIDComm.
+- Participants are encouraged to use the provided PHC Schema in their solutions.
+
+### Tooling and resources
+
+As described above, the intent of this challenge is to kickstart PHC development within the identity industry by creating standalone Open Source Software (OSS) that can later be used within other platforms and services. To align with that goal, the core source code submissions should be in the form of standalone Rust, Python, or TypeScript libraries accompanied by a demo application. Optionally, submissions that also demonstrate integrating the core library into other identity platforms (e.g., ACA-Py) are highly encouraged.

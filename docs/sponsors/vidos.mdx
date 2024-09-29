@@ -1,0 +1,76 @@
+import styles from "./index.module.css";
+import sponsors from "@site/src/data/sponsors";
+
+# Vido's Challenge
+
+<div className={styles.sponsorsGrid}>
+  {sponsors
+    .filter((s) => s.key == "vidos")
+    .map((sponsor) => (
+      <img src={sponsor.logo} />
+    ))}
+</div>
+
+### Overview
+
+This track invites participants to explore how decentralized identity, specifically leveraging DIDs (Decentralized Identifiers) and VCs (Verifiable Credentials), can be applied to innovative use cases in **recruitment** and **reusable ID**.
+
+Participants will utilize the Vidos tech stack and other tools from our partner network to build solutions that enhance security, efficiency, and user control in these domains.
+
+### Challenges
+
+#### Challenge 1: Employer Portal Using DIDs and VCs (Education track)
+
+Develop a proof-of-concept ‘employer portal’ that enables recruiters to identify, verify, and onboard candidates through a seamless, decentralized identity system. The portal should integrate DID-based identity management and support the issuance and verification of VCs to streamline the hiring process.
+
+Key features include:
+
+- **Candidate Identification: **Use credentials such as education and skills-based certifications to match candidates to suitable roles.
+- **Qualification Verification: **Implement secure methods to verify candidate qualifications and identity using VCs.
+- **Onboarding Automation: **Create a user-friendly onboarding interface that leverages VCs for streamlined processes.
+- **Innovative Training Paths: **Design training programs tailored to the skills of new hires, incorporating credential issuance.
+
+Example use cases:
+
+- Matching candidates to job openings based on verified skills and qualifications.
+- Automating the verification of educational and professional credentials.
+- Creating a marketplace for qualification issuers and recruitment agencies.
+
+### Prizes
+
+(Total of $2,250)
+
+- **1st place:** $1,200, optional video podcast interview, promotion across our socials
+- **2nd place:** $700, optional video podcast interview
+- **3rd place:** $350
+
+#### Challenge 2: VC Interoperability (Reusable ID track)
+
+Develop a proof-of-concept solution that demonstrates the flexibility and interoperability of Verifiable Credentials (VCs) across multiple scenarios. Your solution should showcase how a single VC can be reused in different contexts, such as using a passport for both travel access and age-gated entry. Additionally, the solution should be capable of verifying similar credentials VCs from different issuers, e.g. passport credentials issued by different national authorities - highlighting the versatility of VCs in various real-world applications.
+
+Key features:
+
+- **Interaction with Issuer: **Integrate with a VC issuer (e.g., TBD) and leverage the Vidos tech stack to retrieve and verify the VC, ensuring seamless interaction between the issuer and the verifier.
+- **Multiple Issuers: **Implement functionality to work with multiple VC issuers, creating and verifying credentials from different sources using the Vidos tech stack. This should demonstrate the interoperability of VCs across various issuers.
+- **VC Verification: **Ensure that the solution accurately verifies the correct VC for the given scenario, maintaining high security and reliability standards.
+- **User Design: **Design an intuitive interface that allows users to easily select which VC they wish to use in a given situation, enhancing the user experience and demonstrating the practical application of reusable VCs.
+
+### Prizes
+
+(Total of $2,250)
+
+- **1st place: **$1,200, optional video podcast interview, promotion across our socials
+- **2nd place: **$700, optional video podcast interview
+- **3rd place: **$350
+
+### Submission requirements
+
+- Must use W3C-compliant verifiable credentials.
+- 3-minute video describing what the app does and provide a URL to a public code repository.
+- Text description of the project’s features and functionality.
+- Explanation of how DIDs, VCs, and other requirements were used.
+- Integration with the **Vidos tech stack**.
+
+### Tooling and resources
+
+https://vidos.id/digital-identity-hack-pack

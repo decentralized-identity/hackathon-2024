@@ -1,0 +1,23 @@
+---
+sidebar_position: 3
+---
+
+# Sponsors & Challenges
+
+import React from "react";
+import Layout from "@theme/Layout";
+import styles from "./index.module.css";
+import SponsorCard from "@site/src/components/SponsorCard/SponsorCard";
+import sponsors from "@site/src/data/sponsors";
+
+<div className={styles.sponsorsGrid}>
+  {sponsors.map((sponsor) => (
+    <SponsorCard
+      key={sponsor.id}
+      name={sponsor.name}
+      description={sponsor.description}
+      logo={sponsor.logo}
+      link={sponsor.link}
+    />
+  ))}
+</div>

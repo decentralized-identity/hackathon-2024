@@ -1,0 +1,43 @@
+/* src/components/EventCalendar/EventCalendar.module.css */
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.eventCard {
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.eventCard:hover {
+  transform: scale(1.05);
+}
+
+.eventCard h3 {
+  margin-top: 0;
+  color: #0070f3;
+}
+
+.eventCard p {
+  color: #555;
+}
+
+.eventCard a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #0070f3;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.eventCard a:hover {
+  background-color: #005bb5;
+}

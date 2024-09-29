@@ -1,0 +1,15 @@
+/* HackathonTimeline.module.css */
+
+.timelineContainer {
+  padding: 40px 0;
+}
+
+.vertical-timeline-element-title {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.vertical-timeline-element-content p {
+  font-size: 1rem;
+  color: #555;
+}

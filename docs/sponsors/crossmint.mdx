@@ -1,0 +1,46 @@
+import styles from "./index.module.css";
+import sponsors from "@site/src/data/sponsors";
+
+# Crossmint Challenge: Streamlining Identity Solutions
+
+<div className={styles.sponsorsGrid}>
+  {sponsors
+    .filter((s) => s.key == "crossmint")
+    .map((sponsor) => (
+      <img src={sponsor.logo} />
+    ))}
+</div>
+
+Track: Reusable Identity
+
+### Overview
+
+This track explores the concept of reusable digital identities that can streamline various processes such as KYC (Know Your Customer), KYB (Know Your Business), reusable claims for compliance, and age verification. The goal is to create robust and secure identity solutions that can be reused across different platforms and services.
+
+### Challenge
+
+Leverage [Crossmint’s Verifiable Credentials API](https://docs.crossmint.com/verifiable-credentials/introduction) to develop a reusable identity solution that addresses the challenges of identity verification and compliance in various sectors. The solution should emphasize security, privacy, and ease of use for both individuals and organizations.
+
+Examples
+
+- **KYC/KYB Processes:** Build a platform that allows individuals and businesses to create a reusable digital identity for KYC/KYB purposes, making it easy to verify identity across different financial institutions or platforms without repeatedly submitting documents.
+- **Age Verification**: Create a digital identity solution that provides age verification capabilities for online platforms, such as gaming or content services, ensuring compliance with age-related regulations without revealing unnecessary personal information.
+- **Anti-Money Laundering (AML) Compliance**: Design a system that uses reusable credentials to streamline AML checks for financial transactions, reducing friction and ensuring compliance without compromising user privacy.
+
+### Prizes
+
+Included in each price is a Crossmint swag pack for up to 3 members, delivered to a single address.
+
+- **1st Place**: $800 USD and $2,000 worth of Crossmint subscription credits, with a 12 month expiration date
+- **2nd Place**: $500 USD and $1,000 worth of Crossmint subscription credits, with a 12 month expiration date
+- **3rd Place**: $200 USD and $500 worth of Crossmint subscription credits, with a 12 month expiration date
+
+### Submission requirements
+
+- Must use W3C-compliant verifiable credentials
+- 3 minute video describing what the app does and URL to public code repository
+- Include a text description that explains the features and functionality of your Project. ● Provide a text description of how the DIDs, VCs, and other requirements were used
+
+### Tooling and resources
+
+https://docs.crossmint.com/verifiable-credentials/introduction

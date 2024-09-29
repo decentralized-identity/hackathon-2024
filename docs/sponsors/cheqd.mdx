@@ -1,0 +1,49 @@
+import styles from "./index.module.css";
+import sponsors from "@site/src/data/sponsors";
+
+# cheqd Challenge: Verifiable AI
+
+<div className={styles.sponsorsGrid}>
+  {sponsors
+    .filter((s) => s.key == "cheqd")
+    .map((sponsor) => (
+      <img src={sponsor.logo} />
+    ))}
+</div>
+
+### Overview
+
+In a world where generative AI is increasingly a part of our lives, ensuring the authenticity and trustworthiness of data is crucial. Our challenge for you is to use cheqd’s **decentralized identity** stack to build **Verifiable AI** concept solutions that [tackle emerging societal and technical challenges](https://blog.cheqd.io/verifiable-ai-by-cheqd-7975d296fc9d).
+
+### Challenge
+
+_“Harnessing Decentralized Identity for Verifiable AI”_
+
+The theme of this challenge is to harness decentralized identity for Verifiable AI. Some possible examples are below.
+
+**Potential Examples**
+
+Our [blog post on the potential of decentralized identity in Verifiable AI](https://blog.cheqd.io/verifiable-ai-by-cheqd-7975d296fc9d) offers ideas on sample use cases and applications where we think decentralised identity can restore trust in the age of AI:
+
+- **Content credentials (“How much of this content was AI or human generated?”)**: Content Credentials are an emerging standard using Verifiable Credentials that can capture a “chain-of-custody” of how much of an image (or video/audio) was human-generated or AI-generated, which can help people understand whether to trust a particular content or not.
+- **Proof of Personhood:** Use Verifiable Credentials to capture whether a person is real, to varying levels of “personhood”: a “basic” level could be a credential that states someone is a human (like CAPTCHA), a more “advanced” level would be “it’s this specific person with legal identity”.
+- **Proof of “Authorised AI Agent”**: Just like “Know Your Customer” (KYC), we believe people will authorise generative AI agents to not just come up with text, but _plan_ actions on their behalf. For example, describing to an AI agent your holiday budget and preferences, and it makes bookings on your behalf. A “Proof of AI Agent” will help sites understand if this is a “good” AI bot that’s been authorised by a human, vs a “bad” AI bot.
+
+### Prizes
+
+Total: $7,500 worth of CHEQ tokens
+
+- 1st place: $5,000 worth of CHEQ tokens
+- 2nd place: $2,500 worth of CHEQ tokens
+
+### Submission requirements
+
+- Must utilize W3C-compliant Verifiable Credentials.
+- Must use the cheqd Network through cheqd DID method (did:cheqd) and/or cheqd DID-Linked Resources
+- Reference or use of the CHEQ token is a nice-to-have (points for referencing how you would incorporate it in a scaled-up version)
+- Include a 3-minute video describing the application and its functionality.
+- Provide a URL to a public code repository in GitHub
+- Include a text description detailing the features and functionality of the project.
+- Explain how Decentralized Identifiers (DIDs), VCs, and other requirements were integrated into the solution.
+- Ensure submission includes a project description, video, and a README file in the repository.
+- Must have a clear opportunity for to create a sustainable commercial model, but it does not need this to be built in

@@ -1,0 +1,44 @@
+import styles from "./index.module.css";
+import sponsors from "@site/src/data/sponsors";
+
+# PSE's Challenge: ZKPs in SSI
+
+_Sponsor: [Privacy Scaling and Explorations PSE](https://pse.dev/en)_
+
+<div className={styles.sponsorsGrid}>
+  {sponsors
+    .filter((s) => s.key == "pse")
+    .map((sponsor) => (
+      <img src={sponsor.logo} />
+    ))}
+</div>
+
+### Overview
+
+This track aims to foster innovation and collaboration among developers, researchers, and industry experts to advance the use of programable cryptography in digital identity solutions.
+
+### Objectives
+
+1. Innovate with ZKPs, MPC, FHE: Develop creative applications using programable cryptography to enhance privacy, security, and interoperability in SSI systems.
+2. Collaborate and Learn: Engage with zkp experts to learn about best practices, existing tools, and solutions.
+
+### Hack Ideas & Challenges
+
+1. Solidity verifier for BBS+.
+2. Build a [GPC](https://www.notion.so/6547d2e60c184ad0984f933672246e0b?pvs=21) builder + visualizer.
+3. MPC for recovery (privacy-preserving social recovery system).
+4. MPC for credentials that need to be issued by multiple parties.
+5. Decentralized PKI infra.
+
+[Link](https://pse-team.notion.site/PSE-x-DIF-Hackathon-1356b2848b1c4ba89f5aaf73d9ce0d53) to a list of identity projects in PSE that could be valuable additions to your hackathon projects. These projects primarily offer SDKs for developers to integrate privacy-preserving user authentication or port verifiable data into their apps.
+
+### Prizes
+
+Coming soon
+
+### Submission requirements
+
+- W3C-compliant verifiable credentials.
+- 3-minute video describing what the app does and provide a URL to a public code repository.
+- Text description of the project’s features and functionality.
+- Explanation of how DIDs, VCs, and other requirements were used.
