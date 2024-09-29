@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdif_hackathon_2024_b=self.webpackChunkdif_hackathon_2024_b||[]).push([[235],{8552:a=>{a.exports=JSON.parse('{"name":"docusaurus-plugin-content-pages","id":"default"}')}}]);

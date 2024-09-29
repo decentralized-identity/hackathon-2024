@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdif_hackathon_2024_b=self.webpackChunkdif_hackathon_2024_b||[]).push([[647],{7121:(e,a,s)=>{s.r(a),s.d(a,{default:()=>d});s(6540);var r=s(4164),c=s(1003),h=s(7559),n=s(2831),t=s(781),u=s(4848);function d(e){return(0,u.jsx)(c.e3,{className:(0,r.A)(h.G.wrapper.docsPages),children:(0,u.jsx)(t.A,{children:(0,n.v)(e.route.routes)})})}}}]);
