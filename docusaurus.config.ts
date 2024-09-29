@@ -56,19 +56,19 @@ const config: Config = {
       items: [
         {
           label: 'Hackathon Timeline',
-          to: '/docs/',
+          to: 'docs/',
         },
         {
           label: 'Sponsors & Challenges',
-          to: '/docs/sponsors',
+          to: 'docs/sponsors',
         },
         {
           label: 'Educational Sessions',
-          to: '/docs/educational-sessions',
+          to: 'docs/educational-sessions',
         },
         {
           label: 'Resources',
-          to: '/docs/resources',
+          to: 'docs/resources',
         },
       ],
     },
@@ -80,19 +80,19 @@ const config: Config = {
           items: [
             {
               label: 'Hackathon Timeline',
-              to: '/docs/',
+              to: 'docs/',
             },
             {
               label: 'Sponsors & Challenges',
-              to: '/docs/sponsors',
+              to: 'docs/sponsors',
             },
             {
               label: 'Educational Sessions',
-              to: '/docs/educational-sessions',
+              to: 'docs/educational-sessions',
             },
             {
               label: 'Resources',
-              to: '/docs/resources',
+              to: 'docs/resources',
             },
           ],
         },
