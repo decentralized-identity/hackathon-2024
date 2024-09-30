@@ -12,7 +12,6 @@ const SponsorCard = ({ name, track, logo, link }) => {
       <Link to={link} className={styles.link}>
         <img src={logo} alt={`${name} Logo`} className={styles.logo} />
         <h3 className={styles.name}>{name}</h3>
-        <p className={styles.track}>{trackValue}</p>
       </Link>
     </div>
   );

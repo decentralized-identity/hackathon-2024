@@ -8,6 +8,7 @@ const sponsors = [
     link: "/docs/sponsors/anonyome",
     eventId: "1029330724907",
     discord: "#anonyome",
+    externalLink: "https://anonyome.com/",
   },
   {
     id: 2,
@@ -17,7 +18,8 @@ const sponsors = [
     logo: "https://identity.foundation/hackathon-2024/img/sponsors/arcblock.png",
     link: "/docs/sponsors/arcblock",
     eventId: ["1029328979687", "1029330303647"],
-    discord: "#anonyome",
+    discord: "#arcblock",
+    externalLink: "https://www.arcblock.io/",
   },
   {
     id: 3,
@@ -28,6 +30,7 @@ const sponsors = [
     link: "/docs/sponsors/cheqd",
     eventId: "1031698406707",
     discord: "#cheqd",
+    externalLink: "https://cheqd.io/",
   },
   {
     id: 4,
@@ -38,6 +41,7 @@ const sponsors = [
     link: "/docs/sponsors/crossmint",
     eventId: "1029330474157",
     discord: "#crossmint",
+    externalLink: "https://www.crossmint.com/",
   },
   {
     id: 5,
@@ -48,6 +52,7 @@ const sponsors = [
     link: "/docs/sponsors/edu",
     eventId: "1029330524307",
     discord: "#education-track",
+    externalLink: "https://www.jff.org",
   },
   {
     id: 14,
@@ -58,17 +63,18 @@ const sponsors = [
     link: "/docs/sponsors/extrimian",
     eventId: "1031701084717",
     discord: "#extrimian",
+    externalLink: "https://extrimian.io/",
   },
   {
     id: 6,
     key: "netsys",
     name: "NetSys",
     track: ["Travel"],
-    description: "Leading provider of innovative solutions.",
     logo: "https://identity.foundation/hackathon-2024/img/sponsors/netsys.jpg",
     link: "/docs/sponsors/netsys",
     eventId: "1029330684787",
     discord: "#netsys-hospitality-and-travel",
+    externalLink: "http://netsystechnology.com/",
   },
   {
     id: 7,
@@ -79,6 +85,7 @@ const sponsors = [
     link: "/docs/sponsors/ontology",
     eventId: "1029330754997",
     discord: "#ontology",
+    externalLink: "https://ont.io/",
   },
   {
     id: 8,
@@ -89,6 +96,7 @@ const sponsors = [
     link: "/docs/sponsors/pinata",
     eventId: "1029330564427",
     discord: "#pinata",
+    externalLink: "https://pinata.cloud/",
   },
   {
     id: 9,
@@ -99,16 +107,18 @@ const sponsors = [
     link: "/docs/sponsors/pse",
     eventId: "1029328859327",
     discord: "#pse-ethereum-foundation",
+    externalLink: "https://pse.dev/",
   },
   {
     id: 10,
     key: "tbd",
+    name: "TBD (Block)",
     track: ["Reusable Identity"],
-    description: "Committed to empowering developers worldwide.",
     logo: "https://identity.foundation/hackathon-2024/img/sponsors/tbd.png",
     link: "/docs/sponsors/tbd",
     eventId: "1029330343767",
     discord: "#tbd",
+    externalLink: "https://tbd.website/",
   },
   {
     id: 11,
@@ -119,6 +129,7 @@ const sponsors = [
     link: "/docs/sponsors/truvity",
     eventId: "1029330644667",
     discord: "#truvity",
+    externalLink: "https://www.truvity.com/",
   },
   {
     id: 12,
@@ -129,6 +140,7 @@ const sponsors = [
     link: "/docs/sponsors/vidos",
     eventId: "1029330413977",
     discord: "#vidos",
+    externalLink: "https://vidos.id/",
   },
 ];
 

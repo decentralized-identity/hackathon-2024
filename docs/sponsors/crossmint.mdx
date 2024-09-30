@@ -1,17 +1,10 @@
 import styles from "./index.module.css";
 import sponsors from "@site/src/data/sponsors";
-import EventCalendar from "@site/src/components/EventCalendar/EventCalendar";
+import SponsorDetails from "@site/src/components/SponsorDetails/SponsorDetails";
 
 # Crossmint Challenge: Streamlining Identity Solutions
 
-<div className={styles.sponsorsGrid}>
-  {sponsors
-    .filter((s) => s.key == "crossmint")
-    .map((sponsor) => (
-      <img src={sponsor.logo} />
-    ))}
-</div>
-Track: Reusable Identity
+<SponsorDetails sponsor={sponsors.find((s) => s.key === "crossmint")} />
 
 ### Overview
 

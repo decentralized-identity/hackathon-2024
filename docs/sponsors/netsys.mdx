@@ -1,17 +1,10 @@
 import styles from "./index.module.css";
 import sponsors from "@site/src/data/sponsors";
-import EventCalendar from "@site/src/components/EventCalendar/EventCalendar";
+import SponsorDetails from "@site/src/components/SponsorDetails/SponsorDetails";
 
 # NetSys Challenge: Hospitality and Travel
 
-<div className={styles.sponsorsGrid}>
-  {sponsors
-    .filter((s) => s.key == "netsys")
-    .map((sponsor) => (
-      <img src={sponsor.logo} />
-    ))}
-</div>
-_Sponsor: [NetSys](http://netsystechnology.com/) | DIF H&T SIG_
+<SponsorDetails sponsor={sponsors.find((s) => s.key === "netsys")} />
 
 ### Overview
 

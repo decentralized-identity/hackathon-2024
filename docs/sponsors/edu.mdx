@@ -1,16 +1,10 @@
 import styles from "./index.module.css";
 import sponsors from "@site/src/data/sponsors";
-import EventCalendar from "@site/src/components/EventCalendar/EventCalendar";
+import SponsorDetails from "@site/src/components/SponsorDetails/SponsorDetails";
 
 # Future of Education & Workforce
 
-<div className={styles.sponsorsGrid}>
-  {sponsors
-    .filter((s) => s.key == "edu")
-    .map((sponsor) => (
-      <img src={sponsor.logo} />
-    ))}
-</div>
+<SponsorDetails sponsor={sponsors.find((s) => s.key === "edu")} />
 
 _Sponsor: [Job for the Future Foundation](https://www.jff.org/) and [Digital Credentials Consortium](https://digitalcredentials.mit.edu/)_
 

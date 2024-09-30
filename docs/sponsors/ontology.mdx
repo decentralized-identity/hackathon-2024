@@ -1,16 +1,10 @@
 import styles from "./index.module.css";
 import sponsors from "@site/src/data/sponsors";
-import EventCalendar from "@site/src/components/EventCalendar/EventCalendar";
+import SponsorDetails from "@site/src/components/SponsorDetails/SponsorDetails";
 
 # Ontology's Challenge
 
-<div className={styles.sponsorsGrid}>
-  {sponsors
-    .filter((s) => s.key == "ontology")
-    .map((sponsor) => (
-      <img src={sponsor.logo} />
-    ))}
-</div>
+<SponsorDetails sponsor={sponsors.find((s) => s.key === "ontology")} />
 
 ONT Login is a decentralized universal authentication login component that helps developers shield the details of authentication implementation, and can quickly bring a Web 3.0 secure login experience to enterprises and services. It gives a great presentation of how reuseable identity can be applied in any Web2 / Web3 applications with the protection of users data and privacy. Currently, users need to log into the service via ONT ID. It is fully open source and supports multi-SDKs.
 
@@ -38,7 +32,7 @@ Coming soon
 
 You can find more information via:
 
-- **Official website: [https://login.ont.id/](https://login.ont.id/),**
+- **Official website: [https://login.ont.id/](https://login.ont.id/)**
 - **Documentation: [https://docs.ont.io/decentralized-identity-and-data/ontid/ont-login](https://docs.ont.io/decentralized-identity-and-data/ontid/ont-login)**
-- **Back-end SDK: [https://github.com/ont-id/ontlogin-sdk-go](https://github.com/ont-id/ontlogin-sdk-go) **
+- **Back-end SDK: [https://github.com/ont-id/ontlogin-sdk-go](https://github.com/ont-id/ontlogin-sdk-go)**
 - **Front-end SDK： [https://github.com/ont-id/ontlogin-sdk-js](https://github.com/ont-id/ontlogin-sdk-js)**
