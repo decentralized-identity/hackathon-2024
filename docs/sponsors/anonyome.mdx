@@ -1,11 +1,12 @@
 import styles from "./index.module.css";
 import sponsors from "@site/src/data/sponsors";
+import EventCalendar from "@site/src/components/EventCalendar/EventCalendar";
 
 # Anonyome Labs Challenge: Personhood Credentials
 
 <div className={styles.sponsorsGrid}>
   {sponsors
-    .filter((s) => s.key == "anonyome")
+    .filter((s) => s.key == "arcblock")
     .map((sponsor) => (
       <img src={sponsor.logo} />
     ))}

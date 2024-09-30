@@ -7,6 +7,7 @@ import { format } from "date-fns";
 
 function EventCalendar() {
   // Sort the events by start date
+
   const sortedEvents = [...events].sort((a, b) => {
     return new Date(a.start.utc).getTime() - new Date(b.start.utc).getTime();
   });
