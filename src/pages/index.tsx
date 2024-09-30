@@ -6,8 +6,12 @@ function HomepageHeader() {
   return (
     <header className={styles.heroBanner}>
       <div className={styles.container}>
-        <h1 className={styles.title}>DIF Hackathon</h1>
-        <p className={styles.subtitle}>Innovate. Collaborate. Create.</p>
+        <img
+          src="https://identity.foundation/hackathon-2024/img/dif-hackathon-banner.png"
+          alt="DIF Logo"
+          className={styles.logo}
+        />
+        <h1 className={styles.title}>DIF 2024 Hackathon</h1>
       </div>
     </header>
   );
