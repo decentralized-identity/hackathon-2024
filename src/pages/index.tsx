@@ -11,7 +11,9 @@ function HomepageHeader() {
           alt="DIF Logo"
           className={styles.logo}
         />
-        <h1 className={styles.title}>DIF 2024 Hackathon</h1>
+        <h1 className={styles.title}>
+          <a href="docs/educational-sessions">DIF 2024 Hackathon</a>
+        </h1>
       </div>
     </header>
   );
