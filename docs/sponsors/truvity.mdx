@@ -12,58 +12,71 @@ This track invites participants to explore how decentralized identity and verifi
 
 To build the applications you need to leverage the Truvity SDK (available in TypeScript and Java).
 
-### Challenge 1: Miko’s Journey to Amsterdam: Reusable Digital Identity for Expats
+### Challenges
+
+#### **Challenge 1: Miko’s Journey to Amsterdam: Reusable Digital Identity for Expats**
+
+**Challenge Description**
 
 Miko, a talented backend developer from outside of Europe, is relocating to Amsterdam to join a small yet ambitious startup to develop a cutting-edge Self-Sovereign Identity solution. Amsterdam, the new Verifiable Credentials capital, has a relatively new requirement: all documents in legally-binding processes should be exchanged in the form of Verifiable Credentials between Digital Identity Wallets (both for businesses and retail users). Her Digital Identity Wallet with an embedded to-do list is the key to navigating the complex process of settling as an expat. The wallet's to-do list guides Miko through each step, ensuring that she gathers and submits all required verifiable credentials (VCs) from the right issuers.
 
-The to-do list is pre-configured to:
+The **to-do list** is pre-configured to:
 
-- Know all necessary issuers and where to send collected credentials for verification and further actions.
-- Ensure that some issuers, particularly for more complex processes, only accept interlinked VCs, meaning Miko can’t submit non-linked credentials, ensuring that the integrity of her data is maintained across all processes.
+- Know all necessary **issuers** and where to send collected credentials for verification and further actions.
+- Ensure that some issuers, particularly for more complex processes, only accept **interlinked VCs**, meaning Miko can’t submit non-linked credentials, ensuring that the integrity of her data is maintained across all processes.
 
-Note: The Municipality of Amsterdam fully controls the document issuance in Amsterdam, therefore all businesses and municipal workers must use the municipality's platform and issue VCs on its behalf.
+**_Note_**: The Municipality of Amsterdam fully controls the document issuance in Amsterdam, therefore all businesses and municipal workers must use the municipality's platform and issue VCs on its behalf.
 
-Miko's To-Do List:
+**Miko's To-Do List:**
 
-1. Obtain an Employment Contract
-   - VC: Employment Offer Letter
-   - The to-do list prompts Miko to receive and store this VC from her new employer.
-2. Apply for and Receive a Visa
-   - VCs:
-     - Proof of Identity
-     - Employment Contract
-     - Proof of Financial Stability
-   - Drafts: Allow Miko to begin the process while gathering necessary documents. The visa application can’t be submitted until all relevant VCs are linked.
-3. Register with the Municipality
-   - VCs:
-     - Employment Contract
-     - Proof of Identity
-     - Birth Certificate
-   - The to-do list automatically guides Miko through the residency registration process.
-4. Open a Bank Account
-   - VCs:
-     - Proof of Registration issued by the municipality
-     - Employment Contract
-     - Proof of Identity
-   - Bank institutions that are integrated with the wallet’s interlinked VCs require a full set of linked documents to open her account.
-5. Secure Housing and Sign a Rental Agreement
-   - VCs:
-     - Employment Contract
-     - Proof of Identity
-     - Bank Account Details
-   - The final task, completing her journey with signing a rental agreement, depends on all the previous linked VCs in her wallet.
+1. **Obtain an Employment Contract**
 
-What we are looking for:
+- VC: Employment Offer Letter
+- The to-do list prompts Miko to receive and store this VC from her new employer.
 
-- eKYC with Reusable Identity is a complex process involving many actors, processes, and documents. You can model the process from the perspective of an Issuer or a Relying Party (Verifier), but the most interesting part would be building the Expat Wallet that orchestrates the entire flow using a pre-built To-Do List.
-- We've created many features to simplify this journey. Review them all and use as many as possible in your solution.
+2. **Apply for and Receive a Visa**
+
+- VCs:
+  - Proof of Identity
+  - Employment Contract
+  - Proof of Financial Stability
+- **Drafts**: Allow Miko to begin the process while gathering necessary documents. The visa application can’t be submitted until all relevant VCs are linked.
+
+3. **Register with the Municipality**
+
+- VCs:
+  - Employment Contract
+  - Proof of Identity
+  - Birth Certificate
+- The to-do list automatically guides Miko through the residency registration process.
+
+4. **Open a Bank Account**
+
+- VCs:
+  - Proof of Registration issued by the municipality
+  - Employment Contract
+  - Proof of Identity
+- Bank institutions that are integrated with the wallet’s interlinked VCs require a full set of linked documents to open her account.
+
+5. **Secure Housing and Sign a Rental Agreement**
+
+- VCs:
+  - Employment Contract
+  - Proof of Identity
+  - Bank Account Details
+- The final task, completing her journey with signing a rental agreement, depends on all the previous linked VCs in her wallet.
+
+**What we are looking for**:
+
+- eKYC with Reusable Identity is a complex process involving many actors, processes, and documents. You can model the process from the perspective of an **Issuer** or a **Relying Party (Verifier)**, but the most interesting part would be building the **Expat Wallet** that orchestrates the entire flow using a pre-built **To-Do List**.
+- We've created many features to simplify this journey. **Review them all** and use as many as possible in your solution.
 - You don’t need to focus on the real content of the documents; feel free to model them with few fields found online.
 
-### Challenge 2: eKYC: Compliance Officer Panel
+#### **Challenge 2: eKYC: Compliance Officer Panel**
 
-Challenge Description
+**Challenge Description**
 
-Building on the journey in Challenge 1, this second challenge focuses on the role of a Compliance Officer in the process of verifying and approving the credentials Miko submits. You may model just a part of the whole process (as well as Miko's wallet, it shouldn't even have the UI).
+Building on the journey in Challenge 1, this second challenge focuses on the role of a **Compliance Officer** in the process of verifying and approving the credentials Miko submits. You may model just a part of the whole process (as well as Miko's wallet, it shouldn't even have the UI).
 
 In Step 4, Miko submits her documents to open a bank account. These documents include:
 
@@ -72,20 +85,18 @@ In Step 4, Miko submits her documents to open a bank account. These documents in
 - Proof of Identity
 - Proof of Address
 
-The task is to build a simple Compliance Officer Panel (webpage) where:
+The task is to build a **simple Compliance Officer Panel (webpage)** where:
 
 - Miko's submitted VCs are received by the bank's compliance officer.
 - The compliance officer reviews the documents, approves or rejects them, and logs the decision.
 - On approval, the officer issues a new VC (e.g., “Bank Account Information") and sends it back to Miko’s Digital Wallet.
 
-Key Features:
+**Key Features**:
 
 - The panel allows the compliance officer to view and review interlinked VCs.
 - The panel allows the compliance officer to search through received VCs and their content.
 - The panel provides clear options for approval or rejection of each document.
 - The VCs are interconnected, and documents can’t be reviewed or approved unless all linked VCs are present.
-
-Note: You can build your solution on top of the out-of-the-box Truvity widget or build one from scratch.
 
 ### Prizes
 
@@ -100,7 +111,7 @@ Total: $5,000 USD
   - **2nd place**: $700 USD
   - **3rd place**: $300 USD
 
-### Submission requirements
+### **Submission requirements**
 
 - Must use W3C-compliant verifiable credentials
 - 3 minute video describing what the app does and URL to public code repository
