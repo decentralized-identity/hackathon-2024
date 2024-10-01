@@ -5,8 +5,7 @@ import SponsorDetails from "@site/src/components/SponsorDetails/SponsorDetails";
 # Future of Education & Workforce
 
 <SponsorDetails sponsor={sponsors.find((s) => s.key === "edu")} />
-
-_Sponsor: [Job for the Future Foundation](https://www.jff.org/) and [Digital Credentials Consortium](https://digitalcredentials.mit.edu/)_
+<SponsorDetails sponsor={sponsors.find((s) => s.key === "dcc")} />
 
 ### Challenges
 
@@ -20,7 +19,7 @@ This challenge set is part of the Education Track, and invites you to explore a 
 - **[C 3] Feature Enhancement**
   - [C 3a] Add support for the [Learner Credential Wallet](https://github.com/digitalcredentials/learner-credential-wallet) to use the VC renderMethod attribute to support rich displays of credentials in the application.
   - [C 3b] Allow [VerifierPlus](https://github.com/digitalcredentials/web-verifier-plus) to use the renderMethod attribute to support rich displays, including PDF
-- **[Bonus Design Challenge] Establishing Credibility in Digital Credentials: **
+- **[Bonus Design Challenge] Establishing Credibility in Digital Credentials:**
   - Context: Verifying a digital credential like Verifiable Credentials involves a series of checks performed by software libraries. Some of these are common across all Verifiable Credentials, such as checking that the credential hasn’t been tampered with, hasn’t been revoked, etc. Other checks are specific to the use case, such as checking if the issuer is an authorized issuer of the credential type.
   - Challenge: The question is this – in a world where verifiers, or consumers of VCs, may be consuming a broad array of credentials, often with a human in the loop, how does the human know that the verification check is valid? What is the equivalent of the “browser padlock” for Verifiable Credentials? This challenge invites you to explore how organizations can integrate use of VCs into their processes in ways that humans can have confidence in the results.
   - This challenge can be stacked on top of one of the above challenges, but not standalone.

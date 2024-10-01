@@ -44,6 +44,17 @@ const sponsors = [
     externalLink: "https://www.crossmint.com/",
   },
   {
+    id: 16,
+    key: "dcc",
+    name: "DCC",
+    track: ["Education & Workforce"],
+    eventId: "1029330524307",
+    discord: "#education-track",
+    link: "/docs/sponsors/edu",
+    externalLink: "https://digitalcredentials.mit.edu/",
+    logo: "https://identity.foundation/hackathon-2024/img/sponsors/dcc.png",
+  },
+  {
     id: 5,
     key: "edu",
     name: "JFF",
