@@ -6,14 +6,25 @@ function HomepageHeader() {
   return (
     <header className={styles.heroBanner}>
       <div className={styles.container}>
+        <h1>DIF 2024 Hackathon</h1>
+        <div className={styles.spacer}></div>
         <img
-          src="https://identity.foundation/hackathon-2024/img/dif-hackathon-banner.png"
-          alt="DIF Logo"
+          src="https://identity.foundation/hackathon-2024/img/dif-hackathon-banner-details.png"
+          alt="DIF Hackathon 2024 Banner"
           className={styles.logo}
         />
-        <h1 className={styles.title}>
-          <a href="docs/educational-sessions">DIF 2024 Hackathon</a>
-        </h1>
+        <div className={styles.spacer}></div>
+
+        <div>
+          <a
+            href="https://difhackathon2024.devpost.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.registerButton}
+          >
+            Register Now
+          </a>
+        </div>
       </div>
     </header>
   );
