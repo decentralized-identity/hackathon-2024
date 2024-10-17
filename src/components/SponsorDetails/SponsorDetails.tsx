@@ -4,7 +4,8 @@ import { FaDiscord, FaExternalLinkAlt } from "react-icons/fa";
 import PropTypes from "prop-types";
 
 const SponsorDetails = ({ sponsor }) => {
-  const { name, track, logo, link, eventId, discord, externalLink } = sponsor;
+  const { name, track, logo, link, eventId, recording, discord, externalLink } =
+    sponsor;
 
   // Function to generate Eventbrite registration link
   const getEventbriteLink = (id) => `https://www.eventbrite.com/e/${id}`;
@@ -21,28 +22,29 @@ const SponsorDetails = ({ sponsor }) => {
         </p>
         <p>
           <strong>Informational Session:</strong>{" "}
-          {Array.isArray(eventId) ? (
-            eventId.map((id, index) => (
+          {Array.isArray(recording) ? (
+            eventId.map((r, index) => (
               <span key={index}>
                 <a
-                  href={getEventbriteLink(id)}
+                  href={r}
                   target="_blank"
                   rel="noopener noreferrer"
                   className={styles.eventLink}
                 >
-                  Register Here <FaExternalLinkAlt className={styles.icon} />
+                  Watch the recording{" "}
+                  <FaExternalLinkAlt className={styles.icon} />
                 </a>
                 {index < eventId.length - 1 && ", "}
               </span>
             ))
           ) : (
             <a
-              href={getEventbriteLink(eventId)}
+              href={recording}
               target="_blank"
               rel="noopener noreferrer"
               className={styles.eventLink}
             >
-              Register Here <FaExternalLinkAlt className={styles.icon} />
+              Watch the recording <FaExternalLinkAlt className={styles.icon} />
             </a>
           )}
         </p>
@@ -79,7 +81,12 @@ SponsorDetails.propTypes = {
       PropTypes.string,
       PropTypes.arrayOf(PropTypes.string),
     ]).isRequired,
+    recording: PropTypes.oneOfType([
+      PropTypes.string,
+      PropTypes.arrayOf(PropTypes.string),
+    ]).isRequired,
     discord: PropTypes.string.isRequired,
+    externalLink: PropTypes.string.isRequired,
   }).isRequired,
 };
 

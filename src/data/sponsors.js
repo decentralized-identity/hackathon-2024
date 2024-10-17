@@ -7,6 +7,8 @@ const sponsors = [
     logo: "https://identity.foundation/hackathon-2024/img/sponsors/anonyome.jpg",
     link: "/docs/sponsors/anonyome",
     eventId: "1029330724907",
+    recording:
+      "https://www.youtube.com/watch?v=vYD--q_5O8I&list=PL8j6niRuFWTjGjdsnlGgyFy-aA7zw5CoB&index=13&pp=iAQB",
     discord: "#anonyome",
     externalLink: "https://anonyome.com/",
   },
@@ -18,6 +20,10 @@ const sponsors = [
     logo: "https://identity.foundation/hackathon-2024/img/sponsors/arcblock.png",
     link: "/docs/sponsors/arcblock",
     eventId: ["1029328979687", "1029330303647"],
+    recording: [
+      "https://www.youtube.com/watch?v=I3po4Garizo&list=PL8j6niRuFWTjGjdsnlGgyFy-aA7zw5CoB&index=7&pp=iAQB",
+      "https://www.youtube.com/watch?v=A_pc3BN7POo&list=PL8j6niRuFWTjGjdsnlGgyFy-aA7zw5CoB&index=8&pp=iAQB",
+    ],
     discord: "#arcblock",
     externalLink: "https://www.arcblock.io/",
   },
@@ -29,6 +35,8 @@ const sponsors = [
     logo: "https://identity.foundation/hackathon-2024/img/sponsors/cheqd.png",
     link: "/docs/sponsors/cheqd",
     eventId: "1031698406707",
+    recording:
+      "https://www.youtube.com/watch?v=CV4lg59L4A4&list=PL8j6niRuFWTjGjdsnlGgyFy-aA7zw5CoB&index=17&pp=iAQB",
     discord: "#cheqd",
     externalLink: "https://cheqd.io/",
   },
@@ -40,6 +48,8 @@ const sponsors = [
     logo: "https://identity.foundation/hackathon-2024/img/sponsors/crossmint.png",
     link: "/docs/sponsors/crossmint",
     eventId: "1029330474157",
+    recording:
+      "https://www.youtube.com/watch?v=Gjm31pSuv7E&list=PL8j6niRuFWTjGjdsnlGgyFy-aA7zw5CoB&index=14&pp=iAQB",
     discord: "#crossmint",
     externalLink: "https://www.crossmint.com/",
   },
@@ -62,6 +72,8 @@ const sponsors = [
     logo: "https://identity.foundation/hackathon-2024/img/sponsors/jff.png",
     link: "/docs/sponsors/edu",
     eventId: "1029330524307",
+    recording:
+      "https://www.youtube.com/watch?v=LZHEXhlyfS8&list=PL8j6niRuFWTjGjdsnlGgyFy-aA7zw5CoB&index=16&pp=iAQB",
     discord: "#education-track",
     externalLink: "https://www.jff.org",
   },
@@ -73,6 +85,8 @@ const sponsors = [
     logo: "https://identity.foundation/hackathon-2024/img/sponsors/extrimian.png",
     link: "/docs/sponsors/extrimian",
     eventId: "1031701084717",
+    recording:
+      "https://www.youtube.com/watch?v=5MZ2d9HP3yg&list=PL8j6niRuFWTjGjdsnlGgyFy-aA7zw5CoB&index=15&pp=iAQB",
     discord: "#extrimian",
     externalLink: "https://extrimian.io/",
   },
@@ -84,6 +98,8 @@ const sponsors = [
     logo: "https://identity.foundation/hackathon-2024/img/sponsors/netsys.jpg",
     link: "/docs/sponsors/netsys",
     eventId: "1029330684787",
+    recording:
+      "https://www.youtube.com/watch?v=8jwQjvSn8KA&list=PL8j6niRuFWTjGjdsnlGgyFy-aA7zw5CoB&index=4&pp=iAQB",
     discord: "#netsys-hospitality-and-travel",
     externalLink: "http://netsystechnology.com/",
   },
@@ -95,6 +111,8 @@ const sponsors = [
     logo: "https://identity.foundation/hackathon-2024/img/sponsors/ontology.png",
     link: "/docs/sponsors/ontology",
     eventId: "1029330754997",
+    recording:
+      "https://www.youtube.com/watch?v=86g-kRztn2g&list=PL8j6niRuFWTjGjdsnlGgyFy-aA7zw5CoB&index=5&pp=iAQB",
     discord: "#ontology",
     externalLink: "https://ont.io/",
   },
@@ -106,6 +124,8 @@ const sponsors = [
     logo: "https://identity.foundation/hackathon-2024/img/sponsors/pinata.png",
     link: "/docs/sponsors/pinata",
     eventId: "1029330564427",
+    recording:
+      "https://www.youtube.com/watch?v=nHLmsoVUl2U&list=PL8j6niRuFWTjGjdsnlGgyFy-aA7zw5CoB&index=10&pp=iAQB",
     discord: "#pinata",
     externalLink: "https://pinata.cloud/",
   },
@@ -117,6 +137,8 @@ const sponsors = [
     logo: "https://identity.foundation/hackathon-2024/img/sponsors/PSE.png",
     link: "/docs/sponsors/pse",
     eventId: "1029328859327",
+    recording:
+      "https://www.youtube.com/watch?v=z9ZVTGotDZQ&list=PL8j6niRuFWTjGjdsnlGgyFy-aA7zw5CoB&index=3&pp=iAQB",
     discord: "#pse-ethereum-foundation",
     externalLink: "https://pse.dev/",
   },
@@ -128,6 +150,8 @@ const sponsors = [
     logo: "https://identity.foundation/hackathon-2024/img/sponsors/tbd.png",
     link: "/docs/sponsors/tbd",
     eventId: "1029330343767",
+    recording:
+      "https://www.youtube.com/watch?v=443ZYP7wNjc&list=PL8j6niRuFWTjGjdsnlGgyFy-aA7zw5CoB&index=6&pp=iAQB",
     discord: "#tbd",
     externalLink: "https://tbd.website/",
   },
@@ -139,6 +163,8 @@ const sponsors = [
     logo: "https://identity.foundation/hackathon-2024/img/sponsors/truvity.jpg",
     link: "/docs/sponsors/truvity",
     eventId: "1029330644667",
+    recording:
+      "https://www.youtube.com/watch?v=Jb6cqnS2AZM&list=PL8j6niRuFWTjGjdsnlGgyFy-aA7zw5CoB&index=9&pp=iAQB",
     discord: "#truvity",
     externalLink: "https://www.truvity.com/",
   },
@@ -150,6 +176,8 @@ const sponsors = [
     logo: "https://identity.foundation/hackathon-2024/img/sponsors/vidos.png",
     link: "/docs/sponsors/vidos",
     eventId: "1029330413977",
+    recording:
+      "https://www.youtube.com/watch?v=tWLZGlvkCq0&list=PL8j6niRuFWTjGjdsnlGgyFy-aA7zw5CoB&index=12&pp=iAQB",
     discord: "#vidos",
     externalLink: "https://vidos.id/",
   },
