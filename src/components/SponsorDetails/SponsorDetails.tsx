@@ -10,6 +10,19 @@ const SponsorDetails = ({ sponsor }) => {
   // Function to generate Eventbrite registration link
   const getEventbriteLink = (id) => `https://www.eventbrite.com/e/${id}`;
 
+  const registerLink = (
+    <p>
+      <strong>Register:</strong>{" "}
+      <a
+        href={"https://difhackathon2024.devpost.com/"}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={styles.websiteLink}
+      >
+        DevPost <FaExternalLinkAlt className={styles.icon} />
+      </a>
+    </p>
+  );
   return (
     <div className={styles.container}>
       <div className={styles.header}>
@@ -20,6 +33,7 @@ const SponsorDetails = ({ sponsor }) => {
         <p>
           <strong>Tracks:</strong> {track.join(", ")}
         </p>
+        {registerLink}
         <p>
           <strong>Informational Session:</strong>{" "}
           {Array.isArray(recording) ? (
